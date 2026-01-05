@@ -27,6 +27,13 @@ page = st.sidebar.radio("Navigation", ["Home", "The Collection", "Contact & Fitt
 # --- PAGE 1: HOME ---
 if page == "Home":
     st.markdown("<h1 style='text-align: center; letter-spacing: 2px;'>CLASSY IN SCRUBS</h1>", unsafe_content_allowed=True)
+
+
+
+import urllib
+print("1. YOUR PASSWORD/IP:", urllib.request.urlopen('https://ipv4.icanhazip.com').read().decode('utf8').strip())
+!streamlit run app.py & npx localtunnel --port 8501
+
     st.markdown("<p class='motto'>\"When you look good, we feel good\"</p>", unsafe_content_allowed=True)
     
     # High-end Hero Image
